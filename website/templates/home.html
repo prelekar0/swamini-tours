@@ -1,0 +1,193 @@
+{% extends "base.html" %}{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+<html>
+<head>  
+    <title>Welcome to Swamini Tours and traveling</title> 
+</head>
+
+<body background="{{url_for('static',filename='/images/Sky.jpg')}}">
+  
+
+    <nav class="navbar navbar-expand-lg navbar-dark  " id="navbar">
+        <div class="container-fluid">
+         <i><h4><a class="colored-text" >Swamini Tours</a></h4></i>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            
+          </button>
+          
+        
+           
+        </div>
+      </nav>
+
+
+      <section id="home">
+        <i><h1 class="text-center">EXPLORE THE<span class="colored-text"> INDIA</span>  WITH US</h1></i>
+       <i><p>Inspiring Journeys, Lasting Memories: Your Gateway to Happiness</p></i>
+        
+      </section>
+
+      <section id="package">
+        <div class="container m-5">
+            <i><h1 class="text-center my-5">OUR FACINATING PACKAGES</h1></i>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-13">
+                     <div class="card">
+                      <img src="{{url_for('static',filename='/images/Kedarnath.jpg')}}"  height="250" >
+                      <class="card-img-top" width="300">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Kedarnath</h5>
+                          <p>25,000₹ Per Person</p>
+                          <a href="info1">Views Details</a>
+                        
+                         
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Haridwar.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Haridwar</h5>
+                          <p>12,000₹ Per Person</p>
+                          <a href="info2">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Badrinath.jpg.webp')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Badrinath</h5>
+                          <p>13,000₹ Per Person</p>
+                          <a href="info3">View Details</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Uttarkashi.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Uttarkashi</h5>
+                          <p>14,000₹ Per Person</p>
+                          <a href="info4">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Pithapur.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Pithapur</h5>
+                          <p>8,000₹ Per Person</p>
+                          <a href="info5">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/akkalkot.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Akkkalkoth</h5>
+                          <p>5,000₹ Per Person</p>
+                          <a href="info6">View Details</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Shirdi.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Shridi</h5>
+                          <p>4,000₹ Per Person</p>
+                          <a href="info7">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Tuljapur.jpg.webp')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Tuljapur</h5>
+                          <p>5000₹ Per Person</p>
+                          <a href="info8">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Dwarka.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Dwarka</h5>
+                          <p>15,000₹ Per Person</p>
+                          <a href="info9">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">
+                      <img src="{{url_for('static',filename='/images/Kerala.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Kerla</h5>
+                          <p>14,000₹ Per Person</p>
+                          <a href="info10">View Details</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card">                      
+                      <img src="{{url_for('static',filename='/images/Girnar parikrama.jpg')}}" height="250">
+                        <class="card-img-top" >
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Girnar parikrama</h5>
+                          <p>8,000₹ Per Person</p>
+                          <a href="info11">View Details</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <hr style="height: 10px;border-radius: 10px;">
+
+      <section id="contact">
+        
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h1 style="margin-left: 500px;"><center><u>CONTACT</u></center></h1>
+                      <form method="POST">
+                        <input type="text" class="form-control" placeholder="Enter you Name" >
+                        <input type="email" class="form-control" placeholder="Enter you email-id" >
+                        <input type="text" class="form-control" placeholder="Enter you Phonenumber">
+                        <textarea class="form-control" placeholder="Enter Your Query here...."></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+      <footer>
+        Copyrights@VedantDagade
+      </footer>
+    </form>
+</body>
+</html>
+{% endblock %}

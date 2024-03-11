@@ -1,0 +1,92 @@
+{% extends "base.html" %} {% block title %}Booking{% endblock %} 
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background images</title>
+</head>
+<body background="{{url_for('static',filename='/images/Sky2.png')}}">
+  
+
+<form method="POST">
+    <h3 align="center">Booking-Forms</h3>
+    <div class="form-group">
+       <label for="name">Name</label>
+         <input type="name"
+          class="form-control" 
+          id="name" 
+          name="name" 
+          placeholder="Enter Name"/>
+    </div> 
+ 
+    <div>
+         <label for="email">Email-id</label>
+           <input type="email"
+            class="form-control" 
+            id="email" 
+            name="email" 
+            placeholder="Enter email"/>
+      </div> 
+
+      <div class="form-group">
+        <label for="date">Date</label>
+          <input type="date"
+           class="form-control" 
+           id="date" 
+           name="date" 
+           placeholder="Enter Date"/>
+     </div> 
+
+  <div class="form-group">
+    <label for="time">Time</label>
+      <input type="Time"
+       class="form-control" 
+       id="time" 
+       name="time" 
+       placeholder="Enter Time"/>
+ </div> 
+
+ <div class="form-group">
+  <label for="source">Source</label>
+    <input type="Source"
+     class="form-control" 
+     id="source" 
+     name="source" 
+     placeholder="Enter Source"/>
+</div> 
+
+<div class="form-group">
+  <label for="destination">Destination</label>
+  <select>
+    <option>Kedarnath</option>
+    <option> Haridwar</option>
+    <option> Badrinath</option>
+    <option> Uttarkashi</option>
+    <option> pithapur</option>
+    <option> Akkalkoth</option>
+    <option> Shirdi</option>
+    <option> Tuljapur</option>
+    <option> Dwarka</option>
+    <option> Kerala</option>
+    <option> Girnar parikrama</option>
+   </select>
+     </div>
+
+     <div class="form-group">
+      <label for="Phone-no">Phone-No</label>
+        <input type="Phoneno"
+         class="form-control" 
+         id="Phoneno" 
+         name="Phoneno" 
+         placeholder="Phone_No"/></div>
+ 
+  <br/>
+  <div align="center">
+  <button type="submit"  class="btn btn-primary">Submit</button></div>
+ </form>
+</body>
+</html>
+{% endblock %}
